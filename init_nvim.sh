@@ -1,4 +1,4 @@
 #!/bin/bash
 
 mkdir -p ~/.config
-ln -s .config/nvim ~/.config/nvim
+ln -s "$PWD/.config/nvim" ~/.config/nvim
