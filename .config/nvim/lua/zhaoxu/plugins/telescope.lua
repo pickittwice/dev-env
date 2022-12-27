@@ -21,6 +21,18 @@ telescope.setup({
 				["<C-q>"] = actions.send_selected_to_qflist + actions.open_qflist, -- send selected to quickfixlist
 			},
 		},
+		vimgrep_arguments = {
+			"rg",
+			"--color=never",
+			"--no-heading",
+			"--with-filename",
+			"--line-number",
+			"--column",
+			"--smart-case",
+			"-u",
+			"-u", -- Two -u flags will additionally search hidden files and directories.
+		},
+		file_ignore_patterns = { "node_modules", ".git" },
 	},
 	-- show hidden files
 	pickers = {
