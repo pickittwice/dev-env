@@ -20,6 +20,15 @@ local opts = { noremap = true, silent = true }
 keymap.set("i", "jk", "<ESC>")
 keymap.set("i", "kj", "<ESC>")
 
+-- navigate in insert_mode
+keymap.set("i", "<C-p>", "<Up>", opts)
+keymap.set("i", "<C-n>", "<Down>", opts)
+keymap.set("i", "<C-b>", "<Left>", opts)
+keymap.set("i", "<C-f>", "<Right>", opts)
+keymap.set("i", "<C-a>", "<ESC>I", opts)
+keymap.set("i", "<C-e>", "<End>", opts)
+keymap.set("i", "<C-d>", "<Del>", opts)
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
