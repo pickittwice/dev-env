@@ -16,6 +16,12 @@ if not lspkind_status then
 	return
 end
 
+-- import nvim-cmp plugin safely
+local lspsign_status, lspsign = pcall(require, "lsp_signature")
+if not lspsign_status then
+	return
+end
+
 -- load vs-code like snippets from plugins (e.g. friendly-snippets)
 require("luasnip/loaders/from_vscode").lazy_load()
 
@@ -123,3 +129,5 @@ cmp.setup({
 		native_menu = false,
 	},
 })
+
+lspsign.setup()
