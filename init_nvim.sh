@@ -1,4 +1,5 @@
 #!/bin/bash
 
+BASEDIR=$(dirname "$0")
 mkdir -p ~/.config
-ln -s "$PWD/.config/nvim" ~/.config/nvim
+ln -s "$BASEDIR/.config/nvim" ~/.config/nvim
