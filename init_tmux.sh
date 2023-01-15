@@ -1,6 +1,7 @@
 #!/bin/bash
 
-BASEDIR=$(dirname "$0")
+SCRIPT=$(realpath "$0")
+BASEDIR=$(dirname "$SCRIPT")
 mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ln -s $BASEDIR/.tmux.conf ~/.tmux.conf
