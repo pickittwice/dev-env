@@ -4,7 +4,7 @@ SCRIPT=$(realpath "$0")
 BASEDIR=$(dirname "$SCRIPT")
 mkdir -p ~/.tmux/plugins
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-ln -s $BASEDIR/.tmux.conf ~/.tmux.conf
+ln -sf $BASEDIR/.tmux.conf ~/.tmux.conf
 tmux start-server
 tmux source-file ~/.tmux.conf
 # install the plugins
