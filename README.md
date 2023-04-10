@@ -12,9 +12,12 @@ cp .tmux.conf ~/.tmux.conf
 
 1. $TERM differs from the tmux `default-terminal` setting
 
-add `[[ $TMUX ]] && export TERM="xterm-256color"` to your .bashrc(or .zshrc correspondingly)
+add `[[ $TMUX ]] && export TERM="screen-256color"` to your .bashrc(or .zshrc correspondingly)
 
 ## Neovim
+
+install nodejs:
+https://nodejs.org/en/download/
 
 install neovim:
 https://github.com/neovim/neovim/wiki/Installing-Neovim
