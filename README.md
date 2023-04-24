@@ -6,7 +6,7 @@ develop environment setup
 
 ## Tmux
 
-cp .tmux.conf ~/.tmux.conf
+sh init_tmux.sh
 
 ### FAQ
 
