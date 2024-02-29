@@ -8,3 +8,4 @@ function cd_up() {
 }
 
 alias 'cd..'='cd_up'
+alias wns="watch -n 1 nvidia-smi"
